@@ -36,12 +36,16 @@ a {
     padding: 0 5px;
     color: white;
     font-size: 18px;
+    transition: 0.2s;
+    z-index: 999;
 }
 
 .btn-opacity {
     background-color: transparent;
     outline: 1px solid white;
     width: 215px;
+    position: relative;
+    overflow: hidden;
 }
 
 .btn-nav {
@@ -61,7 +65,8 @@ a {
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: 0 -75px;
-    height: 1300px;
+    height: 1200px;
+    padding-bottom: 50px;
 }
 
 .header-top {
@@ -87,6 +92,7 @@ a {
 
 .header-top-links a {
     margin-left: 20px;
+    transition: 0.3s;
 }
 
 .header-top-logo {
@@ -157,7 +163,7 @@ a {
 /*--------------------- Slider Main ---------------------*/
 /*--------------------- Slider Main ---------------------*/
 .slider-company {
-    margin-bottom: 75px;
+    margin: 100px 0;
 }
 
 .marquee-container {
@@ -331,7 +337,6 @@ a {
 .articles-card {
     position: relative;
     border-radius: 25px;
-    overflow: hidden;
     width: 350px;
     height: 254px;
     margin-bottom: 50px;
@@ -386,4 +391,38 @@ a {
     bottom: 10px;
     font-size: 12px;
     color: rgb(172, 172, 172);
+}
+
+/*--------------------- Animation ---------------------*/
+/*--------------------- Animation ---------------------*/
+.btn:hover {
+    background-color: #b32fff;
+    box-shadow: 0 0 35px 1px #b32fff;
+}
+
+.btn-opacity:hover {
+    box-shadow: 0 0 35px 1px #ffffff;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    transition-duration: 250ms;
+}
+
+.btn-opacity:hover::before {
+    width: 100%;
+}
+
+.btn-opacity::before {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0%;
+    width: 0%;
+    height: 105%;
+    background: #ffffff;
+    transition-duration: 250ms;
+    z-index: -1;
+}
+
+.header-top-links a:hover {
+    color: #5B6CFF;
 }
