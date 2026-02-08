@@ -277,7 +277,7 @@ a {
     right: 0;
     bottom: 0;
     z-index: 1;
-    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.0), transparent);
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0), transparent);
     pointer-events: none;
 }
 
@@ -316,6 +316,10 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.news-date-mobile {
+    display: none;
 }
 
 .teg {
