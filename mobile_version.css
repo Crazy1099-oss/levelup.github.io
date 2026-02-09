@@ -15,11 +15,11 @@
     .header-top nav {
         width: 100%;
         padding: 0 20px;
-        height: 90px;
+        height: 80px;
     }
 
     .header-top-logo {
-        font-size: 35px;
+        font-size: 30px;
     }
 
     .header-top-links {
@@ -81,11 +81,14 @@
 
 
     .news-block-card {
-        margin-bottom: 50px;
+        margin-bottom: 40px;
+        height: 100px;
     }
 
     .news-block-card-image img,
     .news-block-card-image {
+        display: flex;
+        align-items: center;
         width: 150px;
     }
 
@@ -95,7 +98,7 @@
 
     .news-block-card-title-top h2 {
         width: 100%;
-        font-size: 10px;
+        font-size: 15px;
     }
 
     .news-date {
@@ -111,12 +114,8 @@
         font-size: 10px;
     }
 
-    .teg-wraper {
-        padding-bottom: 5px;
-    }
-
     .news-block-card-title-bottom-wraper .teg {
-        font-size: 7px;
+        font-size: 8px;
         border-radius: 25px;
         padding: 5px 5px;
     }
@@ -171,7 +170,7 @@
 @media (max-width: 400px) {
 
     .news-block-card-title-bottom-wraper .teg {
-        font-size: 5px;
+        font-size: 8px;
         border-radius: 25px;
         padding: 5px 5px;
     }
@@ -207,7 +206,7 @@
         margin-bottom: 20px;
     }
 
-    .articles-card-bottom-title{
+    .articles-card-bottom-title {
         padding-left: 5px;
     }
 }
