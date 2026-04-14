@@ -1,450 +1,488 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ri">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>level up | игровые новости</title>
+    <title>Play</title>
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./mobile_version.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
-    <header class="header">
-        <div class="header-top">
-            <nav>
-                <div class="header-top-logo">
-                    <a href="#">Level<span>U</span>p</a>
-                </div>
-                <div class="header-top-links">
-                    <a href="#">Новости</a>
-                    <a href="#">Игры</a>
-                    <a href="#">Статьи</a>
-                    <a href="#">Стримы</a>
-                    <a href="#">Прохождение</a>
-                    <a href="#">Тренировки</a>
-                    <a href="#">Турниры</a>
-                    <a href="#">Помощь</a>
-                </div>
+    <div class="conteiner">
+
+        <div class="info">
+            <div class="info_title">
+                <h2>Правила игры</h2>
+            </div>
+
+            <div class="info_game">
                 <div>
-                    <button class="btn btn-nav">Больше</button>
+                    <svg fill="rgb(248, 239, 61)" width="50px" height="50px" viewBox="0 0 1024 1024"
+                        xmlns="http://www.w3.org/2000/svg" class="icon">
+                        <path
+                            d="M464 720a48 48 0 1 0 96 0 48 48 0 1 0-96 0zm16-304v184c0 4.4 3.6 8 8 8h48c4.4 0 8-3.6 8-8V416c0-4.4-3.6-8-8-8h-48c-4.4 0-8 3.6-8 8zm475.7 440l-416-720c-6.2-10.7-16.9-16-27.7-16s-21.6 5.3-27.7 16l-416 720C56 877.4 71.4 904 96 904h832c24.6 0 40-26.6 27.7-48zm-783.5-27.9L512 239.9l339.8 588.2H172.2z" />
+                    </svg>
                 </div>
-            </nav>
+
+                <p>
+                    нападение на существо забирает у игрока столько единиц здоровья и маны сколько у него самого,
+                    после чего игрок получает столько единиц очков сколько у существа здоровья и маны! Покупка предметов
+                    забирает количество очков у
+                    игрока, но восполняет его единицы здоровья/маны.
+                </p>
+            </div>
+
+            <div class="info_play">
+                <div>
+                    <svg height="50px" width="50px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve">
+                        <style type="text/css">
+                            .st0 {
+                                fill: rgb(248, 61, 61);
+                            }
+                        </style>
+                        <g>
+                            <path class="st0" d="M387.322,0H284.661H227.35H124.7L0,124.678V227.35v57.301v102.672L124.7,512h102.65h57.312h102.661
+		L512,387.322V284.65V227.35V124.678L387.322,0z M287.317,399.658h-62.623V340.72h62.623V399.658z M287.317,296.526h-62.623V112.342
+		h62.623V296.526z" />
+                        </g>
+                    </svg>
+                </div>
+
+                <p>
+                    игра ведется до 10 000 очков, а если у игрока не остается здоровья - игра окончена!
+                </p>
+            </div>
+
+            <div id="game_end_block_restart" class="game_end">
+                <div class="game_end_block">
+                    <h2>Вы проиграли!</h1>
+                        <div>
+                            <button id="btn_restert" class="btn_restart_game">Рестарт</button>
+                        </div>
+                </div>
+            </div>
         </div>
 
-        <div class="conteiner">
-            <div class="header-main">
-                <h1 class="header-main-title">
-                    <span>Игровые</span>
-                    <span>новости</span>
-                </h1>
-                <div class="header-main-title-block-text">
-                    <p>
-                    <div>Твой портал в захватывающие игры!</div>
-                    <div>Погрузись в мир приключений</div>
-                    <div>и побед вместе с нами</div>
-                    </p>
+        <div class="enemy_box">
+            <div id="enemy_box" class="card_enemy">
+                <svg class='svg_avatar' width="150px" height="150px" viewBox="0 0 64 64"
+                    xmlns="http://www.w3.org/2000/svg">
 
-                    <div class="header-main-title-block-text-button">
-                        <button class="btn">Больше</button>
-                        <button class="btn btn-opacity">Смотреть стримы</button>
-                    </div>
+                    <defs>
+                        <style>
+                            .cls-1 {
+                                fill: #ffffff;
+                            }
+
+                            .cls-2 {
+                                fill: #8f8f8f;
+                            }
+
+                            .cls-3 {
+                                fill: #fdfdfd;
+                            }
+
+                            .cls-4 {
+                                fill: #5c5c5c;
+                            }
+                        </style>
+
+                    </defs>
+
+                    <g id="Cyclops">
+
+                        <path class="cls-1"
+                            d="M18.06,7a1,1,0,0,0-.89.74l-1.39,5.11a5.65,5.65,0,0,0,1.64,5.64l3.95,3.6a1,1,0,1,0,1.34-1.48l-1.89-1.73,3.11-2.36-.05-1.95,2,.38a1,1,0,0,0,.37-2h0l-5.37-1L19.05,7.61A1,1,0,0,0,18.06,7ZM45.94,7a1,1,0,0,0-1,.61L43.08,12l-7.4,1.39a1,1,0,1,0,.37,2h0l4.07-.76,0,1.95,3.11,2.36-2.46,2.25a1,1,0,0,0,1.35,1.48l4.51-4.12a5.65,5.65,0,0,0,1.64-5.64L46.83,7.74A1,1,0,0,0,45.94,7Z"
+                            id="path25788" />
+
+                        <path class="cls-2"
+                            d="M19.52,24.31S16,25,15,27.6a2.49,2.49,0,0,0,.88,2.48,7,7,0,0,0,4.48,1.67l3.08-4Z"
+                            id="path145675-5" />
+
+                        <path class="cls-2"
+                            d="M44.48,22.43S48,23.08,49,25.72a2.53,2.53,0,0,1-.88,2.48A7.41,7.41,0,0,1,44,29.88l-3.28-3.45Z"
+                            id="path145680-4" />
+
+                        <path class="cls-1"
+                            d="M22.19,46.19l-5-10.3c-.93-2-2.09-1.85-2.39.29a32.54,32.54,0,0,0-.32,5.34,33.81,33.81,0,0,0,1.78,9.27l4.89-1Z"
+                            id="path116892-4-6" />
+
+                        <path class="cls-1"
+                            d="M41.81,46.19l5-10.3c.93-2,2.09-1.85,2.39.29a32.54,32.54,0,0,1,.32,5.34,33.81,33.81,0,0,1-1.78,9.27l-4.89-1Z"
+                            id="path72041-9-5-9" />
+
+                        <path class="cls-3"
+                            d="M36.9,38.82v4.5l7.32,4.28c2.58,1.51,4.7,3.66,5.28,6.58A1.52,1.52,0,0,1,48,56H16a1.52,1.52,0,0,1-1.49-1.82c.58-2.92,2.7-5.07,5.28-6.58l7.32-4.28-.32-4.5Z"
+                            id="path123162-37" />
+
+                        <path class="cls-2"
+                            d="M26.78,38.81l.28,3.91a9.33,9.33,0,0,0,5.17,1.68A9.12,9.12,0,0,0,36.9,43V38.81Z"
+                            id="path233729" />
+
+                        <path class="cls-3"
+                            d="M43.29,32.72c-2,5.13-6.33,9.67-11.29,9.67s-9.25-4.54-11.29-9.67c-1-2.52-1.2-7-1.2-9.71a12.49,12.49,0,0,1,25,0C44.49,25.74,44.3,30.2,43.29,32.72Z"
+                            id="path25222-7-2-261" />
+
+                        <path class="cls-4"
+                            d="M40.06,25.3a8.49,8.49,0,0,1-16.12,0,3.08,3.08,0,0,1,0-1.9,8.49,8.49,0,0,1,16.12,0A3.24,3.24,0,0,1,40.06,25.3Z"
+                            id="path68751-4" />
+
+                        <path class="cls-1" d="M35.15,24.35A3.15,3.15,0,1,1,32,21.2,3.15,3.15,0,0,1,35.15,24.35Z"
+                            id="path68646-8-9-4" />
+
+                        <path class="cls-2"
+                            d="M23.35,50.24a1,1,0,0,0,0,2h5.1a1.3,1.3,0,0,1,1.12.65,1,1,0,0,0,1.36.37h0a1,1,0,0,0,.36-1.37,3.3,3.3,0,0,0-2.85-1.65Z"
+                            id="path131588-6-0" />
+
+                        <path class="cls-2"
+                            d="M35.55,50.24a3.3,3.3,0,0,0-2.85,1.65,1,1,0,1,0,1.73,1,1.3,1.3,0,0,1,1.12-.65h5.1a1,1,0,0,0,0-2Z"
+                            id="path132344-1-8" />
+
+                        <path class="cls-2"
+                            d="M28.81,45.18a1,1,0,0,0-.53,1.31h0l1,2.39a1,1,0,0,0,1.85-.78l-1-2.39A1,1,0,0,0,28.81,45.18Z"
+                            id="path133885-8" />
+
+                        <path class="cls-2"
+                            d="M35.19,45.18a1,1,0,0,0-1.31.53l-1,2.39a1,1,0,0,0,1.85.78l1-2.39a1,1,0,0,0-.53-1.31Z"
+                            id="path133967-5" />
+
+                    </g>
+
+                </svg>
+                <div class="card_enemy_title">
+                    <h2>уровень 2</h3>
+                </div>
+
+                <p>ДЕМОН - HP:10 MP:50</p>
+
+                <div class="card_btn">
+                    <button id="bnt_level2" class="btn_enemy">напасть</button>
                 </div>
             </div>
 
-            <div class="header-buttom">
-                <div class="header-buttom-block">
-                    <h2>Самое актуально за сегодня</h2>
-                    <p>Следите за актуальными новостями, чтобы не упустить все самое важное</p>
-                    <button class="btn btn-small">Больше</button>
+            <div id="enemy_box2" class="card_enemy">
+                <svg class='svg_avatar' width="150px" height="150px" viewBox="0 0 64 64"
+                    xmlns="http://www.w3.org/2000/svg">
+
+
+                    <g id="Orc">
+
+                        <path class="cls-1"
+                            d="M15.05,8.43a1.56,1.56,0,0,0-.63,1c-1.35,10.92,1.08,17.26,5.22,19.26l4-.49,1.09-5.12-2.85-7.84Z"
+                            id="path58698-7" />
+
+                        <path class="cls-2"
+                            d="M15.8,8.18a1.26,1.26,0,0,0-.76.25C16.28,9.74,20,14.1,22.39,22l2.35,1.15L26,17l-2.42-.58c-3.12-5-5.35-7.43-7.52-8.14Z"
+                            id="path61012-7" />
+
+                        <path class="cls-1"
+                            d="M48.92,8.43l-6.84,6.84-2.85,7.84,1.08,5.12,4,.49c4.13-2,6.56-8.34,5.21-19.26A1.59,1.59,0,0,0,48.92,8.43Z"
+                            id="path326366" />
+
+                        <path class="cls-2"
+                            d="M48.16,8.18a1.5,1.5,0,0,0-.29.06c-2.18.71-4.41,3.11-7.52,8.14L37.92,17l1.31,6.15L41.57,22C44,14.1,47.68,9.74,48.92,8.43A1.26,1.26,0,0,0,48.16,8.18Z"
+                            id="path326368" />
+
+                        <path class="cls-1"
+                            d="M43.37,40.19C51,42.38,53.62,48.85,54.54,52.8A2.64,2.64,0,0,1,51.78,56H12.42a2.83,2.83,0,0,1-2.95-3.45c1-4,3.67-10.21,11.12-12.36Z"
+                            id="path62642-2" />
+
+                        <path class="cls-2"
+                            d="M16.86,50.53a1,1,0,0,0,0,2H28.42a1.29,1.29,0,0,1,1.12.65,1,1,0,0,0,1.37.37h0a1,1,0,0,0,.37-1.37h0a3.3,3.3,0,0,0-2.86-1.65Z"
+                            id="path131588-6-3-2" />
+
+                        <path class="cls-2"
+                            d="M35.53,50.53a3.29,3.29,0,0,0-2.85,1.65A1,1,0,0,0,33,53.55a1,1,0,0,0,1.37-.37,1.3,1.3,0,0,1,1.12-.65H47.09a1,1,0,0,0,0-2Z"
+                            id="path132344-1-6-0" />
+
+                        <path class="cls-2"
+                            d="M28.79,45.47a1,1,0,0,0-.53,1.31l1,2.39a1,1,0,0,0,1.31.53,1,1,0,0,0,.53-1.31h0L30.1,46A1,1,0,0,0,28.79,45.47Z"
+                            id="path133885-0-2" />
+
+                        <path class="cls-2"
+                            d="M35.16,45.47a1,1,0,0,0-1.31.53h0l-1,2.38a1,1,0,0,0,.53,1.32h0a1,1,0,0,0,1.31-.53l1-2.39A1,1,0,0,0,35.16,45.47Z"
+                            id="path133967-6-3" />
+
+                        <path class="cls-2"
+                            d="M19.64,28.72A13.22,13.22,0,1,0,45.2,33.46a13.27,13.27,0,0,0-.88-4.77c-1.35-3.49-4-8.55-4-12.33a8.36,8.36,0,1,0-16.72,0C23.62,20.17,21,25.23,19.64,28.72Z"
+                            id="rect56690-5" />
+
+                        <path class="cls-3"
+                            d="M38.15,30.06c-.17-.71-.41-1-.68-1s-.62.42-.89,1.2a18.13,18.13,0,0,1-2.1,4A11.1,11.1,0,0,1,38,35.49,10.64,10.64,0,0,0,38.15,30.06Z"
+                            id="path312035" />
+
+                        <path class="cls-3"
+                            d="M29.48,34.26a17.93,17.93,0,0,1-2.11-4c-.27-.78-.59-1.2-.89-1.2s-.51.34-.68,1a10.64,10.64,0,0,0,.14,5.43A11.17,11.17,0,0,1,29.48,34.26Z"
+                            id="path58110-4" />
+
+                        <path class="cls-4" d="M30.64,22.59a2.6,2.6,0,1,1-5-1.35Z" id="path317509" />
+
+                        <path class="cls-4" d="M33.31,22.59a2.61,2.61,0,0,0,5-1.35Z" id="path317511" />
+
+                        <path class="cls-1"
+                            d="M32,33.05a13.65,13.65,0,0,0-5.87,1.23,8.5,8.5,0,0,0-2,1.31,1,1,0,0,0,0,1.42h0a1,1,0,0,0,1.41,0h0a5.63,5.63,0,0,1,1.5-1,11.7,11.7,0,0,1,5-1,11.73,11.73,0,0,1,5,1,5.63,5.63,0,0,1,1.5,1,1,1,0,0,0,1.39-1.44h0a8.5,8.5,0,0,0-2-1.31A13.64,13.64,0,0,0,32,33.05Z"
+                            id="path57348" />
+
+                        <path class="cls-1"
+                            d="M33.31,19.46a1,1,0,0,0-1,1v2.13h0a1.22,1.22,0,0,0,0,.26,1,1,0,0,0,1.23.7l5-1.35a1,1,0,0,0,.7-1.22,1,1,0,0,0-1.22-.71l-3.78,1v-.83A1,1,0,0,0,33.31,19.46Z"
+                            id="path175736" />
+
+                        <path class="cls-1"
+                            d="M30.64,19.46a1,1,0,0,0-1,1v.83l-3.78-1a1,1,0,1,0-.51,1.93l5,1.35a1,1,0,0,0,1.23-.7,1.22,1.22,0,0,0,0-.26h0V20.46A1,1,0,0,0,30.64,19.46Z"
+                            id="path174156" />
+
+                    </g>
+
+                </svg>
+
+                <div class="card_enemy_title">
+                    <h2>уровень 4</h3>
                 </div>
 
-                <div class="header-buttom-block">
-                    <h2>Читать новые статьи</h2>
-                    <p>Следите за актуальными статьями, чтобы узнать мнение игроков</p>
-                    <button class="btn btn-small">Больше</button>
+                <p>ОРК - HP:25 MP:10</p>
+
+                <div class="card_btn">
+                    <button id="bnt_level4" class="btn_enemy">напасть</button>
+                </div>
+            </div>
+
+            <div id="enemy_box3" class="card_enemy">
+                <svg class='svg_avatar' width="150px" height="150px" viewBox="0 0 64 64"
+                    xmlns="http://www.w3.org/2000/svg">
+
+                    <g id="Yeti">
+
+                        <path class="cls-1"
+                            d="M16.74,39.66S8,42.4,8,48.13v5.58A2.28,2.28,0,0,0,10.29,56H53.71A2.28,2.28,0,0,0,56,53.71V48.13c0-5.73-8.74-8.47-8.74-8.47Z"
+                            id="path156727-2" />
+
+                        <path class="cls-2"
+                            d="M44,46.27h.56A2.7,2.7,0,0,1,47.26,49v7H16.74V49a2.7,2.7,0,0,1,2.71-2.7H44Z"
+                            id="rect158193-9" />
+
+                        <path class="cls-3"
+                            d="M21,12.88l-.45-.08a4,4,0,0,1-2.93-2.36,1.1,1.1,0,0,0-2.07.15L15,12.65a4.61,4.61,0,0,0,1.35,4.64l.68.62L21.4,15Z"
+                            id="path171524-8" />
+
+                        <path class="cls-3"
+                            d="M43,12.88l.45-.08a4,4,0,0,0,2.93-2.36,1.1,1.1,0,0,1,2.07.15L49,12.65a4.61,4.61,0,0,1-1.35,4.64l-.68.62-3.73-2.25Z"
+                            id="path171520-8" />
+
+                        <path class="cls-4"
+                            d="M32,8a14.94,14.94,0,0,0-10.61,4.51c-7.3,7.5-8.86,15.32-8.83,18.36a6.39,6.39,0,0,0,5-2.06s-2.2,3.74-.8,10.85a4.76,4.76,0,0,0,2.65,0c0,2.16.1,5.76,1.06,8a3.92,3.92,0,0,0,3.87.1A17.47,17.47,0,0,0,32,52.76a17.47,17.47,0,0,0,7.68-5.09,3.92,3.92,0,0,0,3.87-.1c1-2.19,1.08-5.79,1.06-8a4.76,4.76,0,0,0,2.65,0c1.4-7.11-.8-10.85-.8-10.85a6.39,6.39,0,0,0,5,2.06c0-3-1.53-10.86-8.83-18.36A14.94,14.94,0,0,0,32,8Z"
+                            id="path156571-1" />
+
+                        <path class="cls-5" d="M29.36,27.93a2.6,2.6,0,1,1-2.59-2.59A2.59,2.59,0,0,1,29.36,27.93Z"
+                            id="path160378-9" />
+
+                        <path class="cls-5" d="M39.83,27.93a2.6,2.6,0,1,1-2.6-2.59A2.6,2.6,0,0,1,39.83,27.93Z"
+                            id="path160483-0" />
+
+                        <path class="cls-1"
+                            d="M29,22.83a1,1,0,0,0-.76.1l-6.88,4a1,1,0,1,0,1,1.73l6.88-4a1,1,0,0,0,.37-1.36A1,1,0,0,0,29,22.83Z"
+                            id="path173487" />
+
+                        <path class="cls-1"
+                            d="M35,22.83a1,1,0,0,0-.6.47,1,1,0,0,0,.36,1.36l6.88,4A1,1,0,0,0,43,28.27h0a1,1,0,0,0-.36-1.36h0l-6.88-4A1,1,0,0,0,35,22.83Z"
+                            id="path173569" />
+
+                    </g>
+
+                </svg>
+
+                <div class="card_enemy_title">
+                    <h2>уровень 7</h3>
                 </div>
 
-                <div class="header-buttom-block">
-                    <h2>Популярные стримы</h2>
-                    <p>Следи за любимыми стримерами каждый день! Не пропусти очередную транлсяцию</p>
-                    <button class="btn btn-small">Больше</button>
+                <p>ЙЕТИ - HP:50 MP:25</p>
+
+                <div class="card_btn">
+                    <button id="bnt_level7" class="btn_enemy">напасть</button>
                 </div>
             </div>
         </div>
-    </header>
 
-    <main>
-        <div class="conteiner">
-            <div class="slider-company">
-                <div class="marquee-container">
-                    <div class="marquee">
-                        <span><a href="#"><img class="links-opacity" src="./image/logo-company/twitch.png"
-                                    alt="twitch"></a></span>
-                        <span><a href="#"><img class="links-opacity" src="./image/logo-company/steam.png"
-                                    alt="steam"></a></span>
-                        <span><a href="#"><img class="links-opacity" src="./image/logo-company/discord.png"
-                                    alt="discord"></a></span>
-                        <span><a href="#"><img class="links-opacity" src="./image/logo-company/youtube.png"
-                                    alt="youtube"></a></span>
-                    </div>
-                    <div class="marquee">
-                        <span><a href="#"><img class="links-opacity" src="./image/logo-company/twitch.png"
-                                    alt="twitch"></a></span>
-                        <span><a href="#"><img class="links-opacity" src="./image/logo-company/steam.png"
-                                    alt="steam"></a></span>
-                        <span><a href="#"><img class="links-opacity" src="./image/logo-company/discord.png"
-                                    alt="discord"></a></span>
-                        <span><a href="#"><img class="links-opacity" src="./image/logo-company/youtube.png"
-                                    alt="youtube"></a></span>
-                    </div>
-                    <div class="marquee" aria-hidden="true">
-                        <span><a href="#"><img class="links-opacity" src="./image/logo-company/twitch.png"
-                                    alt="twitch"></a></span>
-                        <span><a href="#"><img class="links-opacity" src="./image/logo-company/steam.png"
-                                    alt="steam"></a></span>
-                        <span><a href="#"><img class="links-opacity" src="./image/logo-company/discord.png"
-                                    alt="discord"></a></span>
-                        <span><a href="#"><img class="links-opacity" src="./image/logo-company/youtube.png"
-                                    alt="youtube"></a></span>
-                    </div>
+        <div class="shop_box">
+            <div id="byEat" class="card_enemy card_enemy_fish">
+
+                <svg class='svg_avatar' width="150px" height="150px" viewBox="0 0 24 24" data-name="016_FOOD"
+                    id="_016_FOOD" xmlns="http://www.w3.org/2000/svg">
+                    <path class="cls-1"
+                        d="M13.17,19a10.64,10.64,0,0,1-9.76-6.61,1.05,1.05,0,0,1,0-.78A10.64,10.64,0,0,1,13.17,5a10.64,10.64,0,0,1,9.75,6.61,1,1,0,0,1,0,.78,11.21,11.21,0,0,1-1.68,2.77,1,1,0,1,1-1.54-1.28A8.58,8.58,0,0,0,20.9,12a8.6,8.6,0,0,0-7.73-5,8.62,8.62,0,0,0-7.74,5,8.62,8.62,0,0,0,7.74,5,8.28,8.28,0,0,0,3.75-.89,1,1,0,1,1,.9,1.78A10.18,10.18,0,0,1,13.17,19Z" />
+                    <ellipse class="cls-1" cx="10.95" cy="4.47" rx="1.58" ry="2.42"
+                        transform="translate(0.04 9.05) rotate(-45)" />
+                    <circle class="cls-1" cx="18" cy="12" r="1" />
+                    <ellipse class="cls-1" cx="10.95" cy="19.39" rx="2.42" ry="1.58"
+                        transform="translate(-10.51 13.42) rotate(-45)" />
+                    <path class="cls-1"
+                        d="M5.33,11.91S3,12.37,1.8,11.2s-.71-3.53-.71-3.53,2.36-.47,3.54.7S5.33,11.91,5.33,11.91Z" />
+                    <path class="cls-1"
+                        d="M5.33,11.67S3,11.2,1.8,12.37s-.71,3.54-.71,3.54,2.36.46,3.54-.71S5.33,11.67,5.33,11.67Z" />
+                </svg>
+
+                <div class="card_enemy_title">
+                    <h2>рыба = еда</h3>
+                </div>
+
+                <p>цена: 25 очков <br> Дает: 50hp</p>
+
+                <div class="card_btn">
+                    <button id="btn_by_hp" class="btn_enemy">купить</button>
                 </div>
             </div>
 
-            <div class="filter-news">
-                <div class="filter-general">
-                    <span>По дате публикации</span>
-                    <span>Очистить фильтр</span>
+            <div class="card_enemy card_player">
+                <svg class='svg_avatar' width="150px" height="150px" viewBox="0 0 64 64"
+                    xmlns="http://www.w3.org/2000/svg">
+
+                    <defs>
+
+                        <style>
+                            .cls-1_1 {
+                                fill: #748a95;
+                            }
+
+                            .cls-2_1 {
+                                fill: #f6e782;
+                            }
+
+                            .cls-3_1 {
+                                fill: #ebb87f;
+                            }
+
+                            .cls-4_1 {
+                                fill: #efc89d;
+                            }
+
+                            .cls-5_1 {
+                                fill: #f0f4f7;
+                            }
+                        </style>
+
+                    </defs>
+
+                    <g id="Viking">
+
+                        <path class="cls-1_1"
+                            d="M24.35,13.42S21.9,11,20,8.79c-1.07-1.23-2-1-2.07.61-.19,6.63,2.44,10,2.44,10l4.17-3Z"
+                            id="path30828-3" />
+
+                        <path class="cls-1_1"
+                            d="M39.65,13.42S42.1,11,44,8.79c1.07-1.23,2-1,2.07.61.19,6.63-2.44,10-2.44,10l-4.17-3Z"
+                            id="path31144-2" />
+
+                        <path class="cls-2_1"
+                            d="M24.31,44.46l-.72-1.23A2.62,2.62,0,0,0,20,42.31l-4.32,2.58a2.74,2.74,0,0,0-1,3.67l1,1.85,6.19-1.58Z"
+                            id="path63663-9-6-1-3" />
+
+                        <path class="cls-2_1"
+                            d="M39.69,44.46l.71-1.23A2.63,2.63,0,0,1,44,42.31l4.32,2.58a2.73,2.73,0,0,1,1,3.67l-1,1.85L42,48.76Z"
+                            id="path66457-2-4-5-6" />
+
+                        <path class="cls-3_1"
+                            d="M23.63,47.06l.33-2.4,3-1.74V40.17h10.1v2.75l3,1.74.33,2.41,4.55.45c2.52,1.54,4.57,3.7,5.14,6.6A1.58,1.58,0,0,1,48.52,56H40.26L32,53l-8.26,3H15.48a1.58,1.58,0,0,1-1.54-1.88c.57-2.9,2.62-5.06,5.14-6.6Z"
+                            id="path561157-7" />
+
+                        <path class="cls-1_1"
+                            d="M40.26,56s-.17-4.19,4.66-8.48L40,44.67a11.76,11.76,0,0,1-16.06,0l-4.89,2.85C23.91,51.81,23.74,56,23.74,56Z"
+                            id="path34202-7-1-3" />
+
+                        <path class="cls-4_1"
+                            d="M20.84,27.79a19.6,19.6,0,0,0,1,5.44C23.66,37.85,27.52,42,32,42s8.34-4.09,10.19-8.72a19.53,19.53,0,0,0,1-5.44L32,25Z"
+                            id="path30474-6" />
+
+                        <path class="cls-2_1" d="M19.9,22.65A12,12,0,0,1,29,11.1H35A12,12,0,0,1,44.1,22.65L32,25.3Z"
+                            id="path31787-6" />
+
+                        <path class="cls-1_1"
+                            d="M30.1,10A1.07,1.07,0,0,0,29,11.1v7.49A4.06,4.06,0,0,1,25,22.65H19.9a.85.85,0,0,0-.85.86v3.42a.85.85,0,0,0,.85.86H44.1a.85.85,0,0,0,.85-.86V23.51a.85.85,0,0,0-.85-.86H39A4.06,4.06,0,0,1,35,18.59V11.1A1.07,1.07,0,0,0,33.9,10Z"
+                            id="rect25295-1" />
+
+                        <path class="cls-5_1" d="M27.47,24.19a1,1,0,1,0,1,1A1,1,0,0,0,27.47,24.19Z" id="path32731" />
+
+                        <path class="cls-5_1" d="M32,24.19a1,1,0,1,0,1,1A1,1,0,0,0,32,24.19Z" id="path32990" />
+
+                        <path class="cls-5_1" d="M36.53,24.19a1,1,0,1,0,1,1A1,1,0,0,0,36.53,24.19Z" id="path32992" />
+
+                        <path class="cls-5_1" d="M41.06,24.19a1,1,0,1,0,1,1A1,1,0,0,0,41.06,24.19Z" id="path32994" />
+
+                        <path class="cls-5_1" d="M22.94,24.19a1,1,0,1,0,1,1A1,1,0,0,0,22.94,24.19Z" id="path32996" />
+
+                        <path class="cls-5_1"
+                            d="M31,20.06a1,1,0,0,0,1,1h0a1,1,0,0,0,1-1h0a1,1,0,0,0-1-1h0a1,1,0,0,0-1,1Z"
+                            id="path33470" />
+
+                        <path class="cls-5_1" d="M31,15.07a1,1,0,1,0,1-1A1,1,0,0,0,31,15.07Z" id="path33472" />
+
+                    </g>
+
+                </svg>
+
+
+                <div class="card_enemy_title player_title">
+                    <h2>Игрок</h3>
                 </div>
-                <div class="filter-categories">
-                    <div class="filter-categories-title">Категории</div>
-                    <div class="filter-categories-card">
-                        <button class="categories-card">Игровые новости</button>
-                        <button class="categories-card">ПК железо</button>
-                        <button class="categories-card">Новости киборспорта</button>
-                        <button class="categories-card">Новинки</button>
-                    </div>
-                </div>
-                <div class="filter-genres">
-                    <div class="filter-categories-title">Жанры</div>
-                    <button class="categories-card">Шутеры</button>
-                    <button class="categories-card">Файтинги</button>
-                    <button class="categories-card">Слэшеры </button>
-                    <button class="categories-card">Ролевые игры</button>
-                    <button class="categories-card">Стратегии</button>
-                    <button class="categories-card">Приключения</button>
-                    <button class="categories-card">Симуляторы</button>
-                    <button class="categories-card">Головоломки </button>
-                    <button class="categories-card">Спортивные игры</button>
-                    <button class="categories-card">Хоррор</button>
-                </div>
+
+                <p class="player_info">
+                    HP: <span id="hp_player_span">100</span> <br>
+                    MP: <span id="mp_player_span">100</span> <br>
+                    ОЧКИ: <span id="points_player_span">0</span>
+                </p>
             </div>
 
-            <div class="news-block">
-                <div class="news-block-card">
-                    <div class="news-block-card-image">
-                        <img src="./image/news/news1.png" alt="news">
-                    </div>
-                    <div class="news-block-card-title">
-                        <div class="news-block-card-title-top">
-                            <h2 class="news-text">Microsoft может добавить уровень подписки Game Pass с рекламой,
-                                считают эксперты</h2>
-                            <p class="news-date">01.08.2026</p>
-                        </div>
-                        <div class="news-block-card-title-bottom">
-                            <div class="news-block-card-title-bottom-wraper">
-                                <button class="btn btn-opacity">Читать дальше</button>
-                                <p class="news-date-mobile">01.08.2026</p>
-                                <div class="teg-wraper">
-                                    <span class="teg">#countrestrike</span>
-                                    <span class="teg">#countrestrike</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div id="byEat2" class="card_enemy card_enemy_fish">
+                <svg class='svg_avatar cls-1' width="150px" height="150px" viewBox="0 0 1000 1000" version="1.1"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    enable-background="new 0 0 1000 1000" xml:space="preserve">
+
+                    <g>
+
+                        <g transform="translate(0.000000,511.000000) scale(0.100000,-0.100000)">
+
+                            <path
+                                d="M3379.8,4996.2c0-9.9,71.1-294.4,156.1-632.3l156.1-618.4h-81c-142.3,0-235.1-41.5-349.7-158.1c-211.4-209.4-211.4-422.8,0-632.3c120.5-120.5,207.5-158.1,373.4-158.1h100.8V2564v-233.1l-193.6-23.7c-802.2-92.9-1452.2-673.8-1657.7-1477.9c-33.6-126.5-35.6-320.1-35.6-2768.1v-2629.8l59.3-75.1c33.6-39.5,90.9-88.9,128.4-108.7c65.2-35.6,181.8-37.5,2963.7-37.5c2781.9,0,2898.5,2,2963.7,37.5c37.6,19.7,94.8,69.2,128.4,108.7l59.3,75.1v2629.8c0,2448-2,2641.7-35.5,2768.1c-96.8,375.4-247,640.2-527.6,920.7c-345.8,345.8-709.3,519.6-1179.6,565.1l-144.2,13.8V2562v235.1h100.8c166,0,252.9,37.5,373.4,158.1c106.7,106.7,158.1,207.5,158.1,316.1s-51.4,209.4-158.1,316.1c-116.6,118.5-207.5,158.1-353.7,158.1c-71.1,0-81,5.9-73.1,35.6c5.9,17.8,73.1,286.5,150.2,596.7c77.1,310.2,144.2,578.9,150.2,598.7c9.9,31.6-75.1,33.6-1610.3,33.6C4108.9,5010,3379.8,5004.1,3379.8,4996.2z M4768.8,4670.2c-106.7-51.4-102.7-215.4,5.9-266.7c130.4-63.2,260.8,59.3,205.5,193.6c-13.8,33.6-45.4,69.2-67.2,77.1c-23.7,9.9,177.8,17.8,482.1,17.8c381.3,0,511.7-5.9,480.1-21.7c-108.7-53.3-98.8-225.2,15.8-272.7c124.5-51.4,247,71.1,197.6,195.6c-13.8,31.6-43.5,65.2-67.2,77.1c-35.6,17.8-21.7,21.7,77,21.7l122.5,2l-118.6-474.2l-118.6-474.2l-636.2,2c-458.4,0-622.4,5.9-590.8,21.7c23.7,11.9,53.3,47.4,67.2,79c51.4,126.5-73.1,247-201.5,193.6c-108.7-45.4-122.5-211.4-19.8-266.7c45.4-25.7,19.8-27.7-268.7-29.6h-320.1l-19.8,75.1c-23.7,88.9-195.6,790.3-207.5,839.7c-7.9,31.6,25.7,33.6,507.8,31.6C4672,4691.9,4800.4,4686,4768.8,4670.2z M6541.1,3389.8c25.7-25.7,39.5-65.2,39.5-118.5s-13.8-92.9-39.5-118.5c-39.5-39.5-65.2-39.5-1541.1-39.5c-1475.9,0-1501.6,0-1541.1,39.5c-25.7,25.7-39.5,65.2-39.5,118.5s13.8,92.9,39.5,118.5c39.5,39.5,65.2,39.5,1541.1,39.5C6475.9,3429.4,6501.6,3429.4,6541.1,3389.8z M5948.4,2403.9v-391.2l312.2-11.9c351.7-11.9,466.3-37.5,709.3-154.1c310.2-148.2,567.1-405,715.3-715.2c160-333.9,148.2-85,154.1-3003.2l5.9-2602.1H5000H2154.8l5.9,2602.1c5.9,2918.3-5.9,2669.3,154.1,3003.2c148.2,310.2,405,567.1,715.2,715.2c243,116.6,357.6,142.3,711.3,154.1l310.2,11.9v391.2v393.2H5000h948.4V2403.9z" />
+
+                            <path
+                                d="M4136.6,4512.1c-108.7-53.3-98.8-225.2,15.8-272.7c175.8-73.1,298.4,195.6,124.5,274.6C4217.6,4539.8,4193.9,4539.8,4136.6,4512.1z" />
+
+                            <path
+                                d="M5401.1,4196c-108.7-53.3-98.8-225.2,15.8-272.7c175.9-73.1,298.4,195.6,124.5,274.6C5482.1,4223.6,5458.4,4223.6,5401.1,4196z" />
+
+                            <path d="M2471,584.2V426.1h1975.8h1975.8v158.1v158.1H4446.8H2471V584.2z" />
+
+                            <path d="M6896.8,584.2V426.1h316.1H7529v158.1v158.1h-316.1h-316.1V584.2z" />
+
+                            <path
+                                d="M8793.6,4061.6v-316.1h-316.1h-316.1v-158.1v-158.1h316.1h316.1v-316.1v-316.1h158.1h158.1v316.1v316.1h316.1h316.1v158.1v158.1h-316.1h-316.1v316.1v316.1h-158.1h-158.1V4061.6z" />
+
+                            <path
+                                d="M890.3,2164.8v-316.1H574.2H258.1v-158.1v-158.1h316.1h316.1v-316.1V900.3h158.1h158.1v316.1v316.1h316.1h316.1v158.1v158.1h-316.1h-316.1v316.1V2481h-158.1H890.3V2164.8z" />
+
+                        </g>
+
+                    </g>
+                </svg>
+
+                <div class="card_enemy_title">
+                    <h2>зелье = напиток</h3>
                 </div>
 
-                <div class="news-block-card">
-                    <div class="news-block-card-image">
-                        <img src="./image/news/news2.png" alt="news">
-                    </div>
-                    <div class="news-block-card-title">
-                        <div class="news-block-card-title-top">
-                            <h2 class="news-text">Боссы в Resident Evil Requiem напомнят
-                                о первых частях серии</h2>
-                            <p class="news-date">01.08.2026</p>
-                        </div>
-                        <div class="news-block-card-title-bottom">
-                            <div class="news-block-card-title-bottom-wraper">
-                                <button class="btn btn-opacity">Читать дальше</button>
-                                <p class="news-date-mobile">01.08.2026</p>
-                                <div><span class="teg">#countrestrike</span></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <p>цена: 25 очков <br> Дает: 50mp</p>
 
-                <div class="news-block-card">
-                    <div class="news-block-card-image">
-                        <img src="./image/news/news3.png" alt="news">
-                    </div>
-                    <div class="news-block-card-title">
-                        <div class="news-block-card-title-top">
-                            <h2 class="news-text">Microsoft может добавить уровень подписки Game Pass с рекламой,
-                                считают эксперты</h2>
-                            <p class="news-date">01.08.2026</p>
-                        </div>
-                        <div class="news-block-card-title-bottom">
-                            <div class="news-block-card-title-bottom-wraper">
-                                <button class="btn btn-opacity">Читать дальше</button>
-                                <p class="news-date-mobile">01.08.2026</p>
-                                <div><span class="teg">#countrestrike</span></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="news-block-card">
-                    <div class="news-block-card-image">
-                        <img src="./image/news/news4.png" alt="news">
-                    </div>
-                    <div class="news-block-card-title">
-                        <div class="news-block-card-title-top">
-                            <h2 class="news-text">Microsoft может добавить уровень подписки Game Pass с рекламой,
-                                считают эксперты</h2>
-                            <p class="news-date">01.08.2026</p>
-                        </div>
-                        <div class="news-block-card-title-bottom">
-                            <div class="news-block-card-title-bottom-wraper">
-                                <button class="btn btn-opacity">Читать дальше</button>
-                                <p class="news-date-mobile">01.08.2026</p>
-                                <div><span class="teg">#countrestrike</span></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="news-block-card">
-                    <div class="news-block-card-image">
-                        <img src="./image/news/news5.png" alt="news">
-                    </div>
-                    <div class="news-block-card-title">
-                        <div class="news-block-card-title-top">
-                            <h2 class="news-text">Microsoft может добавить уровень подписки Game Pass с рекламой,
-                                считают эксперты</h2>
-                            <p class="news-date">01.08.2026</p>
-                        </div>
-                        <div class="news-block-card-title-bottom">
-                            <div class="news-block-card-title-bottom-wraper">
-                                <button class="btn btn-opacity">Читать дальше</button>
-                                <p class="news-date-mobile">01.08.2026</p>
-                                <div><span class="teg">#countrestrike</span></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="news-block-card">
-                    <div class="news-block-card-image">
-                        <img src="./image/news/news6.png" alt="news">
-                    </div>
-                    <div class="news-block-card-title">
-                        <div class="news-block-card-title-top">
-                            <h2 class="news-text">Microsoft может добавить уровень подписки Game Pass с рекламой,
-                                считают эксперты</h2>
-                            <p class="news-date">01.08.2026</p>
-                        </div>
-                        <div class="news-block-card-title-bottom">
-                            <div class="news-block-card-title-bottom-wraper">
-                                <button class="btn btn-opacity">Читать дальше</button>
-                                <p class="news-date-mobile">01.08.2026</p>
-                                <div><span class="teg">#countrestrike</span></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="news-block-card">
-                    <div class="news-block-card-image">
-                        <img src="./image/news/news7.png" alt="news">
-                    </div>
-                    <div class="news-block-card-title">
-                        <div class="news-block-card-title-top">
-                            <h2 class="news-text">Microsoft может добавить уровень подписки Game Pass с рекламой,
-                                считают эксперты</h2>
-                            <p class="news-date">01.08.2026</p>
-                        </div>
-                        <div class="news-block-card-title-bottom">
-                            <div class="news-block-card-title-bottom-wraper">
-                                <button class="btn btn-opacity">Читать дальше</button>
-                                <p class="news-date-mobile">01.08.2026</p>
-                                <div><span class="teg">#countrestrike</span></div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="card_btn">
+                    <button id="btn_by_mp" class="btn_enemy">купить</button>
                 </div>
             </div>
+        </div>
+    </div>
 
-            <div class="news-namber">
-
-            </div>
-
-            <div class="articles">
-
-                <div class="articles-card">
-                    <div class="articles-card-image">
-                        <img src="./image/articles/articles1.png" alt="статья">
-                        <p class="articles-card-date">01.08.2026</p>
-                    </div>
-
-                    <div class="articles-card-bottom">
-                        <div class="articles-card-bottom-user">
-                            <img src="./image/articles/user.png" alt="пользоватнль">
-                        </div>
-
-                        <div class="articles-card-bottom-title">
-                            <div class="articles-card-bottom-title-top">
-                                <h2>Никита</h2>
-                                <button class="btn btn-small">Больше</button>
-                            </div>
-
-                            <div class="articles-card-bottom-title-top-bottom">
-                                Gearbox показала тизер нового Искателя Хранилища в Borderlands 4
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="articles-card">
-                    <div class="articles-card-image">
-                        <img src="./image/articles/articles1.png" alt="статья">
-                        <p class="articles-card-date">01.08.2026</p>
-                    </div>
-
-                    <div class="articles-card-bottom">
-                        <div class="articles-card-bottom-user">
-                            <img src="./image/articles/user.png" alt="пользоватнль">
-                        </div>
-
-                        <div class="articles-card-bottom-title">
-                            <div class="articles-card-bottom-title-top">
-                                <h2>Никита</h2>
-                                <button class="btn btn-small">Больше</button>
-                            </div>
-
-                            <div class="articles-card-bottom-title-top-bottom">
-                                Gearbox показала тизер нового Искателя Хранилища в Borderlands 4
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="articles-card">
-                    <div class="articles-card-image">
-                        <img src="./image/articles/articles1.png" alt="статья">
-                        <p class="articles-card-date">01.08.2026</p>
-                    </div>
-
-                    <div class="articles-card-bottom">
-                        <div class="articles-card-bottom-user">
-                            <img src="./image/articles/user.png" alt="пользоватнль">
-                        </div>
-
-                        <div class="articles-card-bottom-title">
-                            <div class="articles-card-bottom-title-top">
-                                <h2>Никита</h2>
-                                <button class="btn btn-small">Больше</button>
-                            </div>
-
-                            <div class="articles-card-bottom-title-top-bottom">
-                                Gearbox показала тизер нового Искателя Хранилища в Borderlands 4
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-                <div class="articles-card">
-                    <div class="articles-card-image">
-                        <img src="./image/articles/articles1.png" alt="статья">
-                        <p class="articles-card-date">01.08.2026</p>
-                    </div>
-
-                    <div class="articles-card-bottom">
-                        <div class="articles-card-bottom-user">
-                            <img src="./image/articles/user.png" alt="пользоватнль">
-                        </div>
-
-                        <div class="articles-card-bottom-title">
-                            <div class="articles-card-bottom-title-top">
-                                <h2>Никита</h2>
-                                <button class="btn btn-small">Больше</button>
-                            </div>
-
-                            <div class="articles-card-bottom-title-top-bottom">
-                                Gearbox показала тизер нового Искателя Хранилища в Borderlands 4
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="articles-card">
-                    <div class="articles-card-image">
-                        <img src="./image/articles/articles1.png" alt="статья">
-                        <p class="articles-card-date">01.08.2026</p>
-                    </div>
-
-                    <div class="articles-card-bottom">
-                        <div class="articles-card-bottom-user">
-                            <img src="./image/articles/user.png" alt="пользоватнль">
-                        </div>
-
-                        <div class="articles-card-bottom-title">
-                            <div class="articles-card-bottom-title-top">
-                                <h2>Никита</h2>
-                                <button class="btn btn-small">Больше</button>
-                            </div>
-
-                            <div class="articles-card-bottom-title-top-bottom">
-                                Gearbox показала тизер нового Искателя Хранилища в Borderlands 4
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="articles-card">
-                    <div class="articles-card-image">
-                        <img src="./image/articles/articles1.png" alt="статья">
-                        <p class="articles-card-date">01.08.2026</p>
-                    </div>
-
-                    <div class="articles-card-bottom">
-                        <div class="articles-card-bottom-user">
-                            <img src="./image/articles/user.png" alt="пользоватнль">
-                        </div>
-
-                        <div class="articles-card-bottom-title">
-                            <div class="articles-card-bottom-title-top">
-                                <h2>Никита</h2>
-                                <button class="btn btn-small">Больше</button>
-                            </div>
-
-                            <div class="articles-card-bottom-title-top-bottom">
-                                Gearbox показала тизер нового Искателя Хранилища в Borderlands 4
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-    </main>
+    <script src="./script.js"></script>
 </body>
 
 </html>
