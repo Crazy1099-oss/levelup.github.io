@@ -1,0 +1,164 @@
+body {
+    background-color: #2a374a;
+    color: #e0e7ff;
+    font-family: "Inter", sans-serif;
+}
+
+.hidden {
+    display: none;
+}
+
+.user-card {
+    margin: auto;
+    margin-top: 150px;
+    width: fit-content;
+    height: fit-content;
+    padding: 50px 90px;
+    border-radius: 25px;
+    box-shadow: 0 10px 70px 1px #212b3a;
+}
+
+.add-user-card-title {
+    text-align: center;
+}
+
+.add-user-card-title h2 {
+    font-size: 35px;
+    margin: 10px 0;
+}
+
+.add-user-card-title p {
+    font-weight: 300;
+    font-size: 18px;
+    margin-bottom: 50px;
+    color: #c5cbdf;
+}
+
+.form-user p {
+    margin-top: 0;
+}
+
+.form-user form input {
+    background-color: #1e2837;
+    border: 3px solid #1e2837;
+    width: 321px;
+    height: 50px;
+    padding-left: 20px;
+    color: #c5cbdf;
+    font-size: 16px;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+}
+
+.form-user form input:focus {
+    border-color: #3b83f6;
+    outline: none;
+}
+
+.form-user form button {
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+    color: #ffffff;
+    background-color: #3b83f6;
+    font-weight: 500px;
+    font-size: 20px;
+}
+
+.form-user form button:hover {
+    background-color: #225bd6;
+    font-size: 22px;
+}
+
+.conteiner {
+    text-align: center;
+    margin: 150px 0;
+}
+
+.auter-iamge {
+    width: 150px;
+    border-radius: 100%;
+}
+
+.info-auther {
+    text-align: center;
+}
+
+.auther {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.btn-exit {
+    cursor: pointer;
+    font-size: 20px;
+    border: 3px solid #3b83f6;
+    width: 130px;
+    padding: 7px 0;
+    background-color: #3b83f6;
+    color: #c5cbdf;
+    border-radius: 10px;
+    transition: 0.2s;
+    color: white;
+}
+
+.btn-exit:hover {
+    background-color: rgb(233, 60, 60);
+    border-color: rgb(233, 60, 60);
+}
+
+.info-book {
+    margin-top: 50px;
+}
+
+.info-book img {
+    width: 250px;
+    position: relative;
+}
+
+#nameBook {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#pageCount {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#rating {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.all-info {
+    max-width: 750px;
+    margin: 150px auto;
+}
+
+
+.all-info-book {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #c5cbdf;
+}
+
+.all-info-book p {
+    margin-left: 35px;
+}
+
+.error-block {
+    display: none;
+    margin-top: 10px;
+    color: rgb(233, 60, 60);;
+}
+
+.error-block.visible {
+    display: block;
+}
